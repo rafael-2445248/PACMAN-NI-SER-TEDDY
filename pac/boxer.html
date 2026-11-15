@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Punch Out</title>
+    <link rel="stylesheet" href="boxer.css">
+</head>
+<body>
+
+    <h1>Mini Punch-Out!</h1>
+    <p id="message">Press a button to fight!</p>
+
+    <!-- Health Bars -->
+    <div class="health-container">
+        <div>
+            <p>Player HP: <span id="player-hp-text">100</span></p>
+            <div class="health-bar">
+                <div id="player-health" class="health-fill"></div>
+            </div>
+        </div>
+        <div>
+            <p>Enemy HP: <span id="enemy-hp-text">100</span></p>
+            <div class="health-bar">
+                <div id="enemy-health" class="health-fill enemy-color"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Boxing Ring -->
+    <div id="ring">
+        <div id="enemy">
+            <div class="face">😠</div>
+        </div>
+        <div id="player">
+            <div class="gloves">🥊 🥊</div>
+        </div>
+    </div>
+
+    <!-- Controls -->
+    <div class="controls">
+        <button onclick="punch()">Punch (Space)</button>
+        <button onclick="dodgeLeft()">Dodge Left (A)</button>
+        <button onclick="dodgeRight()">Dodge Right (D)</button>
+        <button id="restart-btn" onclick="restartGame()" style="display: none;">Play Again</button>
+    </div>
+
+    <script src="boxer.js"></script>
+</body>
+</html>

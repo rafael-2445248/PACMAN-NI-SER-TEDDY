@@ -1,0 +1,28 @@
+body {
+    background-color: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#game-container {
+    position: relative;
+    width: 608px; 
+    height: 672px;
+}
+
+#Board {
+    background-color: black;
+    border: 2px solid #1919A6;
+    display: block;
+}
+
+.sprite {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    pointer-events: none;
+    z-index: 2;
+}
